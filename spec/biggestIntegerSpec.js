@@ -14,4 +14,9 @@ describe("biggestInteger", function(){
         let result = solution(num)
         expect(result).toEqual(4)
     })
+    it("should return 1 if any number negative", function(){
+        let num = [3, -2, 4, 5, 8 ]
+        let result = solution(num)
+        expect(result).toEqual(1)
+    })
 })

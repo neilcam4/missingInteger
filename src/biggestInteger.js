@@ -4,11 +4,12 @@ function solution(num){
         return num[0] + 1
     } else if (sorted.length > 1){
         for(var i=0;i<sorted.length;i++){
-            if(sorted[i+1] - sorted[i] !== 1){
+            if(sorted[i] < 0){
+                return 1
+            }
+            else if(sorted[i+1] - sorted[i] !== 1){
                 return sorted[i] + 1
             }
-        }
-        
+        }   
     }
-    
 }
